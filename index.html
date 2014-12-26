@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<title>Untitled VN · altbdoor.github.io</title>
+	
+	<link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+	<div id="container">
+		<h1 class="text-center">Untitled VN - A Short Visual Novel</h1>
+		<p>
+			This is a small visual novel of sorts which was jointly developed
+			with a friend of mine for an assignment. The original concept was
+			similar to most dating sims, but was (drastically) cut short due
+			to time constraints. (It is now more of a comedy than anything
+			romance.)
+		</p>
+		<p>
+			The <a href="https://docs.google.com/file/d/0B5pMzfAiZLn4TGNhd1RBRzI4NGc/edit?usp=sharing" target="_blank">final product</a>
+			was made in <a href="https://www.python.org/" target="_blank">Python</a>,
+			with <a href="http://www.renpy.org/" target="_blank">Ren'Py</a> and
+			this is the JavaScript port, which was made in my free time.
+			Obviously, I just ported the story, and not the whole of Ren'Py.
+			<a href="https://github.com/jdeisenberg/js-vine">Looking for one?</a>
+		</p>
+		
+		<p>
+			Images are stolen (shamelessly) from Google Images.<br>
+			Works best with <b>Google Chrome</b> and <b>Mozilla Firefox</b>.<br>
+			Press <code>spacebar</code> to proceed in the story.
+		</p>
+		
+		<div id="box">
+			<ul id="answers" class="text-center" hidden></ul>
+			
+			<div id="box-overlay" class="text-center">
+				<button id="btn-start" disabled>Loading script...</button>
+			</div>
+			
+			<div id="img-left" hidden></div>
+			<div id="img-center" hidden></div>
+			<div id="img-right" hidden></div>
+			
+			<div id="box-text">
+				<h3>Loading resources...</h3>
+				The button above will show "Start" as text when it is ready
+			</div>
+		</div>
+		
+		<p>Differences with Ren'Py version:</p>
+		<ul>
+			<li><b>Christmas 2014 Update</b>, use IDs instead of integer jumps.</li>
+			<li>Slow, laggy, buggy implementation. Hey, it's my free time.</li>
+			<li><strike>Worse than JUMP statements.</strike></li>
+			<li>No effects. JQuery could handle animation, but I'm lazy.</li>
+			<li>Added in-the-middle transitions as a black screen. Else, it'd be quite sudden.</li>
+			<li>Compressed images, so it loads faster on the web. May look uglier though.</li>
+			<li>No save, no load, well, basically nothing like Ren'Py.</li>
+		</ul>
+		
+		<div id="foot" class="text-center">
+			Made with ♥ by altbdoor and JY
+		</div>
+	</div>
+	
+	<div id="preload"></div>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="public/dialog.js"></script>
+	<script src="public/script.js"></script>
+</body>
+</html>
