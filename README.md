@@ -20,7 +20,7 @@ Obviously, I just ported the story, and not the whole of Ren'Py.
 
 Differences with Ren'Py version:
 
-- **Christmas 2014 Update**, , use IDs instead of integer jumps.
+- **Christmas 2014 Update**, use IDs instead of integer jumps.
 - Slow, laggy, buggy implementation. Hey, it's my free time.
 - <strike>Worse than JUMP statements.</strike>
 - No effects. JQuery could handle animation, but I'm lazy.
